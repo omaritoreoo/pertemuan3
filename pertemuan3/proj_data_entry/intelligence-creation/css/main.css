@@ -1,0 +1,94 @@
+/* Reset dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bg.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* Header (Sticky) */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #062794, #020C2E);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Judul di Header */
+.title {
+    flex: 1;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.main-content {
+    background: rgba(255, 255, 255, 0.3); /* Warna putih transparan */
+    backdrop-filter: blur(10px); /* Efek blur */
+    color: white;
+    text-align: center;
+    padding: 50px;
+    width: 50%;
+    margin: 100px auto 0 auto; /* Jarak dari header ke bawah */
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antar kotak */
+    margin-top: 50px; /* Jarak dari main-content */
+    flex-wrap: wrap; /* Supaya responsif di layar kecil */
+}
+
+.info-box {
+    background: white;
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.3); /* Warna putih transparan */
+    backdrop-filter: blur(10px); /* Efek blur */
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; /* Jarak dari info-container */
+}
+
+.action-button {
+    background: rgb(69, 69, 255);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.action-button:hover {
+    background: darkblue;
+}
+
+.footer {
+    background: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: black;
+    margin-top: 50px; /* Jarak dari button */
+}
