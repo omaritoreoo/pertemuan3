@@ -1,0 +1,113 @@
+/* Reset dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bg.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
+
+
+/* Header (Sticky) */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #062794, #020C2E);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Judul di Header */
+.title {
+    flex: 1;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* Tombol Sidebar */
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* Akun (pojok kanan tapi tidak terlalu mepet) */
+.account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 70px; /* Supaya tidak terlalu ke kanan */
+    max-width: 250px; /* Biar tidak terlalu melebar di layar besar */
+}
+
+
+.account img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 60px; /* Biar tidak menutupi header */
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 20px;
+    z-index: 999;
+}
+
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #F8F8F8;
+}
+
+/* Tombol Close Sidebar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 30px;
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    max-height: 70vh;
+    max-height: 70vh; /* Batasi tinggi maksimum */
+    margin-top: 80px; /* Supaya konten tidak tertutup header */
+    overflow-y: auto; /* Tambahkan scrollbar jika konten terlalu panjang */
+    padding: 15px; /* Kurangi padding biar tidak terlalu lebar ke bawah */
+    transition: margin-left 0.3s;
+    background: rgba(255, 255, 255, 0.3); /* Warna putih transparan */
+    backdrop-filter: blur(10px); /* Efek blur */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+}
